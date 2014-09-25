@@ -1,0 +1,18 @@
+<#import "../layout/defaultLayout.ftl.html" as layout> 
+<@layout.myLayout "Home page">    
+
+
+<h1>Test page for Shiro login</h1>
+
+
+<form method="post" action="login">
+    <p><input type="text" name="username" value="" placeholder="Benutzername"></p>
+    <p><input type="password" name="password" value="" placeholder="Password"></p>
+    <p class="submit"><input type="submit" name="commit" value="Login"></p>
+</form>
+
+
+<p></p>
+<a href="/">Home</a>
+
+</@layout.myLayout>

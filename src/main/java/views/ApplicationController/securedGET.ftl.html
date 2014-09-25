@@ -1,0 +1,16 @@
+<#import "../layout/defaultLayout.ftl.html" as layout> 
+<@layout.myLayout "Home page">    
+
+
+<h1>Test page for secured resource with filter</h1>
+
+
+    Hello ${username}, you have reached a secured website. Grats, you passed the filter.
+
+<p></p>
+<p></p>
+<a href="/logout">logout</a>
+<p></p>
+<a href="/">Home</a>
+
+</@layout.myLayout>
