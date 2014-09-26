@@ -16,6 +16,7 @@
 
 package conf;
 
+import ch.reboundsoft.shinobi.ShinobiCachedModule;
 import ch.reboundsoft.shinobi.ShinobiIniModule;
 import ch.reboundsoft.shinobi.ShinobiJdbcModule;
 import com.google.inject.AbstractModule;
@@ -26,8 +27,9 @@ public class Module extends AbstractModule {
     
     @Override
     protected void configure() {        
-        install(new ShinobiJdbcModule());
+        //install(new ShinobiJdbcModule());
         //install(new ShinobiIniModule());
+        install(new ShinobiCachedModule());
     }
 
 }

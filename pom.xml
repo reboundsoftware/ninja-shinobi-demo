@@ -12,13 +12,15 @@ the specific language governing permissions and limitations under the License. -
     <packaging>war</packaging>
     <groupId>ch.reboundsoft</groupId>
     <version>1.0-SNAPSHOT</version>
+    <name>ninja-shinobi-demo</name>
+
     
     <url>http://www.ninjaframework.org</url>
     
     <properties>
         <ninja.version>3.3.1</ninja.version>
         <jetty.version>9.2.1.v20140609</jetty.version>
-        <shinobi.version>0.1</shinobi.version>
+        <shinobi.version>0.2</shinobi.version>
         <derby.version>10.10.2.0</derby.version>
 
     </properties>
@@ -184,7 +186,11 @@ the specific language governing permissions and limitations under the License. -
             <artifactId>shinobi</artifactId>
             <version>${shinobi.version}</version>
         </dependency>
-	
     </dependencies>
-    <name>ninja-shinobi-demo</name>
+    <repositories>
+        <repository>
+            <id>reboundsoft-snapshots</id>
+            <url>https://github.com/reboundsoftware/reboundsoftware-repo/tree/master/snapshots</url>
+        </repository>
+    </repositories>
 </project>
